@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="style.css">
+    <title>SHIT READER</title>
+</head>
+<body>
+
+    <script src="js/elements/all.js" type="module"></script>
+
+    <div class="menu">
+        <button id="openProject">OPEN PROJECT</button>
+        <button id="openRecent">OPEN RECENT</button>
+        <button id="record">RECORD</button>
+        <button id="train">TRAIN</button>
+    </div>
+    <shit-page-manager></shit-page-manager>
+    <collapsible-element title="Recorder">
+        <shit-recording></shit-recording>
+    </collapsible-element>
+    <collapsible-element title="Training">
+        <shit-training></shit-training>
+    </collapsible-element>
+    
+    
+
+    <script type="module" defer src="js/main.js"></script>
+
+    
+    
+</body>
+</html>

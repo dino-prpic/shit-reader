@@ -1,0 +1,53 @@
+html,
+body {
+    overscroll-behavior: none;
+}
+
+body {
+    height: 100vh;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    /* background: #c2c2c2; */
+    background: #1f1e1e;
+    color: #cce3e2;
+    font-family: sans-serif;
+    overflow: hidden;
+    padding: 1vmin;
+    gap: 1vmin;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 1vmin;
+    border-radius: 1vmin;
+    outline: 1px solid #cce3e2;
+}
+button:focus {
+    outline: 3px solid #cce3e2;
+}
+
+.window {
+    padding: 2vmin;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3vmin;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    opacity: 0.5;
+    transform: scale(0.8);
+    transition: opacity, transform 0.2s ease-in-out;
+}
+.window:hover {
+    opacity: 0.8;
+}
+.window:focus,
+.window:focus-within {
+    opacity: 1;
+    transform: scale(1);
+}
